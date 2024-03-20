@@ -5,6 +5,8 @@ sensores_formatos = {
     "MIROS": "mir_gz",
     "YOUNG": "yng_gz",
 }
+
+
 def verificar_se_formato_e_valido(nome_do_arquivo):
     nome = Path(nome_do_arquivo)
     formato_arquivo = Path(nome_do_arquivo).suffix

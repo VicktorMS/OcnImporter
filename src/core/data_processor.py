@@ -1,4 +1,4 @@
-from utils.conversor_de_formatos import nome_do_sensor_para_formato
+from src.utils.conversor_de_formatos import nome_do_sensor_para_formato
 from datetime import datetime
 
 
