@@ -1,5 +1,5 @@
 # import de outros modulos
-from src.core.data_processor import DataProcessor
+from src.core.import_list_converter import DataProcessor
 import tests.data_entry_example as test_data
 from src.core.manipulacao_arquivos import procurar_arquivo_da_perda_em_diretorio, copiar_dado_para_diretorio_destino
 
@@ -7,7 +7,7 @@ from src.core.manipulacao_arquivos import procurar_arquivo_da_perda_em_diretorio
 if __name__ == "__main__":
     data_processor = DataProcessor()
 
-    lista_de_perdas = data_processor.extract_dataloss_from_rawdata_array(test_data.IMPORT_LIST_JSON_EXAMPLE1)
+    lista_de_perdas = data_processor.convert_string_array_to_import_data_list(test_data.IMPORT_LIST_JSON_EXAMPLE1)
     procurar_arquivo_da_perda_em_diretorio(lista_de_perdas, test_data.SOURCE_DIRECTORY_EXAMPLE)
 
     ##TODO: Refatorar Classe em data_processor
