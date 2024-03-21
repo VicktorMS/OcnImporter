@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a6f696d2-300f-446a-8bc5-8d841cdaf59a" name="Changes" comment="MIT License">
+    <list default="true" id="a6f696d2-300f-446a-8bc5-8d841cdaf59a" name="Changes" comment="Refactored:Following English Pattern">
+      <change afterPath="$PROJECT_DIR$/src/core/constants.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/data_processor.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/import_list_converter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/comparador_dado_e_perda.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/comparador_dado_e_perda.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/import_list_converter.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/import_list_converter.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -140,12 +142,21 @@
       <option name="project" value="LOCAL" />
       <updated>1710945813934</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Refactored:Following English Pattern">
+      <option name="closed" value="true" />
+      <created>1710980355751</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1710980355751</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Readme and license" />
     <MESSAGE value="MIT License" />
-    <option name="LAST_COMMIT_MESSAGE" value="MIT License" />
+    <MESSAGE value="Refactored:Following English Pattern" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactored:Following English Pattern" />
   </component>
 </project>

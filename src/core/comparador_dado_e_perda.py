@@ -1,11 +1,18 @@
 from datetime import datetime, timedelta
+from src.core.constants import (
+    SENSOR_PARAM_UCD,
+    SENSOR_NAME,
+    SENSOR_FORMAT,
+    START_DATE,
+    END_DATE,
+)
 
 
 def comparar_lista_de_perda_com_lista_de_dados(lista_de_perdas, lista_de_dados):
     dados_encontrados = []
     for perda in lista_de_perdas:
-        data_inicial_perda = perda["data_inicial"]
-        data_final_perda = perda["data_final"]
+        data_inicial_perda = perda[START_DATE]
+        data_final_perda = perda[END_DATE]
 
         # Verifica se a perda tem um intervalo de datas
         if data_inicial_perda < data_final_perda:
