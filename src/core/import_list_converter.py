@@ -1,6 +1,6 @@
-from src.utils.conversor_de_formatos import nome_do_sensor_para_formato
+from src.utils.utils import sensor_name_to_format
 from datetime import datetime
-from src.core.constants import (
+from src.constants.dictionaries_constants import (
     SENSOR_PARAM_UCD,
     SENSOR_NAME,
     SENSOR_FORMAT,
@@ -55,7 +55,7 @@ def extract_import_data_from_string(raw_data):
     import_data_dict = {
         SENSOR_PARAM_UCD: param_and_ucd,
         SENSOR_NAME: sensor_name,
-        SENSOR_FORMAT: nome_do_sensor_para_formato(sensor_name), # Refactor
+        SENSOR_FORMAT: sensor_name_to_format(sensor_name), # Refactor
         START_DATE: start_date,
         END_DATE: end_date,
     }

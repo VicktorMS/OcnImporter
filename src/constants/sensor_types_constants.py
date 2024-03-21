@@ -1,4 +1,4 @@
-sensores_formatos = {
+sensors_formats = {
     "MIROS": "mir_gz",
     "YOUNG": "yng_gz",
 }
