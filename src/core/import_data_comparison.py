@@ -22,7 +22,6 @@ def compare_import_data_list_with_files_list(import_data_list, files_list):
             for data in files_list:
                 if import_date == data[FILE_DATE]:
                     found_data.append(data)
-    print(found_data)
     return found_data
 
 

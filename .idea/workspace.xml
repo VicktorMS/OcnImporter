@@ -4,18 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a6f696d2-300f-446a-8bc5-8d841cdaf59a" name="Changes" comment="Refactored: import_list_converter.py dictionary using functions instead class">
-      <change afterPath="$PROJECT_DIR$/src/core/import_data_processor.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/utils.py" afterDir="false" />
+    <list default="true" id="a6f696d2-300f-446a-8bc5-8d841cdaf59a" name="Changes" comment="Refactored: All files to English pattern and created constants.py">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/comparador_dado_e_perda.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/comparador_dado_e_perda.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/constants.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/dictionaries_constants.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/constants/dictionaries_constants.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/dictionaries_constants.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/core/import_list_converter.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/import_list_converter.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/manipulacao_arquivos.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/validacao_arquivos.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/validators/file_validation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/conversor_de_formatos.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/sensores_formatos.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/sensor_types_constants.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/data_entry_example.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/constants/data_entry_constants.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/test_comparador_dado_e_perda.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_comparador_dado_e_perda.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -48,6 +42,8 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Python tests.Python tests for test_comparador_dado_e_perda.TestComparadorDadoEPerda.executor": "Run",
+    "Python tests.Python tests for test_comparador_dado_e_perda.TestComparadorDadoEPerda.test_calculate_date_range.executor": "Run",
+    "Python tests.Python tests for test_comparador_dado_e_perda.TestComparadorDadoEPerda.test_import_data_comparison.executor": "Run",
     "Python.main.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -61,13 +57,14 @@
       <recent name="$PROJECT_DIR$/src/core" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/tests/constants" />
       <recent name="$PROJECT_DIR$/src/validators" />
       <recent name="$PROJECT_DIR$/src/constants" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src/core" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.main">
+  <component name="RunManager" selected="Python tests.Python tests for test_comparador_dado_e_perda.TestComparadorDadoEPerda.test_import_data_comparison">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="OcnImporter" />
       <option name="ENV_FILES" value="" />
@@ -105,8 +102,40 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
+    <configuration name="Python tests for test_comparador_dado_e_perda.TestComparadorDadoEPerda.test_calculate_date_range" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="OcnImporter" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_comparador_dado_e_perda.TestComparadorDadoEPerda.test_calculate_date_range&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test_comparador_dado_e_perda.TestComparadorDadoEPerda.test_import_data_comparison" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="OcnImporter" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_comparador_dado_e_perda.TestComparadorDadoEPerda.test_import_data_comparison&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Python tests for test_comparador_dado_e_perda.TestComparadorDadoEPerda.test_import_data_comparison" />
+        <item itemvalue="Python tests.Python tests for test_comparador_dado_e_perda.TestComparadorDadoEPerda.test_calculate_date_range" />
         <item itemvalue="Python tests.Python tests for test_comparador_dado_e_perda.TestComparadorDadoEPerda" />
       </list>
     </recent_temporary>
@@ -167,7 +196,15 @@
       <option name="project" value="LOCAL" />
       <updated>1711022305169</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Refactored: All files to English pattern and created constants.py">
+      <option name="closed" value="true" />
+      <created>1711032325756</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1711032325756</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -175,6 +212,7 @@
     <MESSAGE value="MIT License" />
     <MESSAGE value="Refactored:Following English Pattern" />
     <MESSAGE value="Refactored: import_list_converter.py dictionary using functions instead class" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactored: import_list_converter.py dictionary using functions instead class" />
+    <MESSAGE value="Refactored: All files to English pattern and created constants.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactored: All files to English pattern and created constants.py" />
   </component>
 </project>

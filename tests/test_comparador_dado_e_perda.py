@@ -1,7 +1,8 @@
 import unittest
 from datetime import datetime, timedelta
 from src.core.import_data_comparison import calculate_date_range, compare_import_data_list_with_files_list
-from tests.data_entry_example import SOURCE_DIRECTORY_FILE_LIST_EXAMPLE, IMPORT_LIST_DICTIONARY_LIST_EXAMPLE
+from tests.constants.data_entry_constants import SOURCE_DIRECTORY_FILE_LIST_EXAMPLE, IMPORT_LIST_DICTIONARY_LIST_EXAMPLE
+from src.constants.dictionaries_constants import FILE_DATE, START_DATE
 
 
 class TestComparadorDadoEPerda(unittest.TestCase):
@@ -9,25 +10,24 @@ class TestComparadorDadoEPerda(unittest.TestCase):
         self.source_directory_files_list = SOURCE_DIRECTORY_FILE_LIST_EXAMPLE
         self.import_list = IMPORT_LIST_DICTIONARY_LIST_EXAMPLE
 
-    def test_calcular_intervalo_entre_datas(self):
-        data_inicial = datetime(2023, 12, 20, 16, 00)
-        data_final = datetime(2023, 12, 21, 13, 00)
-        intervalo_de_datas = calculate_date_range(data_inicial, data_final)
+    def test_calculate_date_range(self):
+        start_date = datetime(2023, 12, 20, 16, 00)
+        end_date = datetime(2023, 12, 21, 13, 00)
+        date_range = calculate_date_range(start_date, end_date)
 
-        # Gere uma lista de datas esperadas
-        datas_esperadas = [data_inicial + timedelta(hours=i) for i in range(0, 22)]
+        # Generate a list of expected dates
+        expected_dates = [start_date + timedelta(hours=i) for i in range(0, 22)]
 
-        self.assertEqual(intervalo_de_datas, datas_esperadas, "O intervalo de datas não é o esperado")
+        self.assertEqual(date_range, expected_dates, "The date range is not as expected")
 
-    def test_comparacao_de_perdas_e_dados(self):
-        # Executar a função que será testada
-        resultado = compare_import_data_list_with_files_list(self.import_list, self.source_directory_files_list)
+    def test_import_data_comparison(self):
+        # Execute the function to be tested
+        result = compare_import_data_list_with_files_list(self.import_list, self.source_directory_files_list)
 
-        # Verificar se o resultado está correto
-        self.assertEqual(len(resultado), 3)  # Deve haver apenas um dado encontrado
-        self.assertEqual(resultado[0]["data"], self.import_list[0]["data_inicial"])
-        self.assertEqual(resultado[2]["data"], self.import_list[1]["data_inicial"])
-
+        # Verify if the result is correct
+        self.assertEqual(len(result), 3)  # There should be only one found data
+        self.assertEqual(result[0][FILE_DATE], self.import_list[0][START_DATE])
+        self.assertEqual(result[2][FILE_DATE], self.import_list[1][START_DATE])
 
 
 if __name__ == '__main__':

@@ -60,14 +60,4 @@ def extract_import_data_from_string(raw_data):
         END_DATE: end_date,
     }
 
-    """
-    Exemplo de Retorno
-    {
-        'ucd_param': 'BRM_1_ANNANERY', 
-        'sensor': 'YOUNG', 
-        'formato': 'yng_gz',
-        'data_inicial': datetime.datetime(2023, 12, 15, 17, 0), 
-        'data_final': datetime.datetime(2023, 12, 15, 17, 0)
-     }
-     """
     return import_data_dict
