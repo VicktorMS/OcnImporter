@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a6f696d2-300f-446a-8bc5-8d841cdaf59a" name="Changes" comment="Refactored: All files to English pattern and created constants.py">
+    <list default="true" id="a6f696d2-300f-446a-8bc5-8d841cdaf59a" name="Changes" comment="Refactored: Unit Tests">
+      <change afterPath="$PROJECT_DIR$/ui/widgets/main_window.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/constants/dictionaries_constants.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/dictionaries_constants.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/import_list_converter.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/import_list_converter.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/data_entry_example.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/constants/data_entry_constants.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_comparador_dado_e_perda.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_comparador_dado_e_perda.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,27 +27,27 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 0
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
   <component name="ProjectId" id="2dvY1rRXuGiculdgOThfR0THM5m" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python tests.Python tests for test_comparador_dado_e_perda.TestComparadorDadoEPerda.executor": "Run",
-    "Python tests.Python tests for test_comparador_dado_e_perda.TestComparadorDadoEPerda.test_calculate_date_range.executor": "Run",
-    "Python tests.Python tests for test_comparador_dado_e_perda.TestComparadorDadoEPerda.test_import_data_comparison.executor": "Run",
-    "Python.main.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "/home/victormoraes/PycharmProjects/OcnImporter/src/utils"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python tests.Python tests for test_comparador_dado_e_perda.TestComparadorDadoEPerda.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_comparador_dado_e_perda.TestComparadorDadoEPerda.test_calculate_date_range.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_comparador_dado_e_perda.TestComparadorDadoEPerda.test_import_data_comparison.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/victormoraes/PycharmProjects/Qt_Learning/qt_design/counter_automatic_qrc&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/utils" />
@@ -64,7 +61,7 @@
       <recent name="$PROJECT_DIR$/src/core" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests for test_comparador_dado_e_perda.TestComparadorDadoEPerda.test_import_data_comparison">
+  <component name="RunManager" selected="Python.main">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="OcnImporter" />
       <option name="ENV_FILES" value="" />
@@ -204,7 +201,15 @@
       <option name="project" value="LOCAL" />
       <updated>1711032325756</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Refactored: Unit Tests">
+      <option name="closed" value="true" />
+      <created>1711047656805</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1711047656805</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -213,6 +218,7 @@
     <MESSAGE value="Refactored:Following English Pattern" />
     <MESSAGE value="Refactored: import_list_converter.py dictionary using functions instead class" />
     <MESSAGE value="Refactored: All files to English pattern and created constants.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactored: All files to English pattern and created constants.py" />
+    <MESSAGE value="Refactored: Unit Tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactored: Unit Tests" />
   </component>
 </project>
