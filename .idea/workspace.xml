@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a6f696d2-300f-446a-8bc5-8d841cdaf59a" name="Changes" comment="Refactored: Unit Tests">
-      <change afterPath="$PROJECT_DIR$/ui/widgets/main_window.py" afterDir="false" />
+    <list default="true" id="a6f696d2-300f-446a-8bc5-8d841cdaf59a" name="Changes" comment="UI Prototyping with PySide6">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/ui/ocn_importer_prototype.ui" beforeDir="false" afterPath="$PROJECT_DIR$/assets/ui/ocn_importer_prototype.ui" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/widgets/main_window.py" beforeDir="false" afterPath="$PROJECT_DIR$/ui/widgets/main_window.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/widgets/ui_main_window.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -209,7 +210,15 @@
       <option name="project" value="LOCAL" />
       <updated>1711047656805</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="UI Prototyping with PySide6">
+      <option name="closed" value="true" />
+      <created>1711134658918</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1711134658918</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -219,6 +228,7 @@
     <MESSAGE value="Refactored: import_list_converter.py dictionary using functions instead class" />
     <MESSAGE value="Refactored: All files to English pattern and created constants.py" />
     <MESSAGE value="Refactored: Unit Tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactored: Unit Tests" />
+    <MESSAGE value="UI Prototyping with PySide6" />
+    <option name="LAST_COMMIT_MESSAGE" value="UI Prototyping with PySide6" />
   </component>
 </project>

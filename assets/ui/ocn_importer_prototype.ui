@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>778</width>
-    <height>600</height>
+    <width>704</width>
+    <height>598</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -22,7 +22,7 @@
      <enum>QLayout::SetMaximumSize</enum>
     </property>
     <item>
-     <layout class="QVBoxLayout" name="verticalLayout">
+     <layout class="QVBoxLayout" name="io_imports_layout">
       <property name="spacing">
        <number>0</number>
       </property>
@@ -39,63 +39,69 @@
        <number>6</number>
       </property>
       <item>
-       <widget class="QTabWidget" name="tabWidget">
+       <widget class="QTabWidget" name="io_imports_tab_widget">
         <property name="currentIndex">
          <number>0</number>
         </property>
-        <widget class="QWidget" name="tab">
+        <widget class="QWidget" name="a_set_imports_tab_layout">
          <attribute name="title">
-          <string>Tab 1</string>
+          <string>Definir Importação</string>
          </attribute>
          <layout class="QVBoxLayout" name="verticalLayout_8">
           <item>
-           <layout class="QHBoxLayout" name="horizontalLayout_3">
+           <layout class="QHBoxLayout" name="set_import_btns_layout">
+            <property name="spacing">
+             <number>42</number>
+            </property>
             <item>
-             <widget class="QPushButton" name="pushButton_3">
+             <widget class="QPushButton" name="use_import_list_file_btn">
               <property name="text">
-               <string>PushButton</string>
+               <string>Usar Arquivo</string>
               </property>
              </widget>
             </item>
             <item>
-             <widget class="QPushButton" name="pushButton_4">
+             <widget class="QPushButton" name="paste_import_list_btn">
               <property name="text">
-               <string>PushButton</string>
+               <string>Colar</string>
               </property>
              </widget>
             </item>
            </layout>
           </item>
           <item>
-           <widget class="QTextEdit" name="textEdit"/>
+           <widget class="QTextEdit" name="input_import_list_text_edit"/>
           </item>
          </layout>
         </widget>
-        <widget class="QWidget" name="tab_2">
+        <widget class="QWidget" name="imports_results_tab_layout">
          <attribute name="title">
-          <string>Tab 2</string>
+          <string>Resultado da Importação</string>
          </attribute>
          <layout class="QVBoxLayout" name="verticalLayout_10">
           <item>
-           <layout class="QHBoxLayout" name="horizontalLayout_4">
+           <layout class="QHBoxLayout" name="import_results_btns_layout">
+            <property name="spacing">
+             <number>42</number>
+            </property>
             <item>
-             <widget class="QPushButton" name="pushButton_5">
+             <widget class="QPushButton" name="export_import_results_btn">
               <property name="text">
-               <string>PushButton</string>
+               <string>Exportar</string>
               </property>
              </widget>
             </item>
             <item>
-             <widget class="QPushButton" name="pushButton_6">
+             <widget class="QPushButton" name="copy_import_results_btn">
               <property name="text">
-               <string>PushButton</string>
+               <string>Copiar</string>
               </property>
              </widget>
             </item>
            </layout>
           </item>
           <item>
-           <widget class="QTextEdit" name="textEdit_2"/>
+           <widget class="QTextEdit" name="output_import_result_text_edit"/>
           </item>
          </layout>
         </widget>
@@ -104,9 +110,9 @@
      </layout>
     </item>
     <item>
-     <layout class="QVBoxLayout" name="verticalLayout_4" stretch="0,0,0">
+     <layout class="QVBoxLayout" name="main_layout" stretch="0,0,0">
       <property name="spacing">
-       <number>64</number>
+       <number>128</number>
       </property>
       <property name="sizeConstraint">
        <enum>QLayout::SetMaximumSize</enum>
@@ -124,26 +130,36 @@
        <number>12</number>
       </property>
       <item>
-       <layout class="QVBoxLayout" name="verticalLayout_7">
+       <layout class="QVBoxLayout" name="main_title_layout" stretch="2">
+        <property name="topMargin">
+         <number>42</number>
+        </property>
         <item>
-         <widget class="QLabel" name="label_3">
+         <widget class="QLabel" name="main_title_label">
+          <property name="styleSheet">
+           <string notr="true">font-weight: 900;
+font-size: 24px;</string>
+          </property>
           <property name="text">
-           <string>ocn Importer TESTE2</string>
+           <string>OCN Importer</string>
           </property>
          </widget>
         </item>
        </layout>
       </item>
       <item>
-       <layout class="QVBoxLayout" name="verticalLayout_2">
+       <layout class="QVBoxLayout" name="input_src_and_dest_paths_layouts">
+        <property name="spacing">
+         <number>0</number>
+        </property>
         <property name="topMargin">
-         <number>64</number>
+         <number>0</number>
         </property>
         <property name="bottomMargin">
-         <number>64</number>
+         <number>24</number>
         </property>
         <item>
-         <layout class="QVBoxLayout" name="verticalLayout_5">
+         <layout class="QVBoxLayout" name="input_souce_dir_layout">
           <property name="spacing">
            <number>0</number>
           </property>
@@ -163,19 +179,19 @@
            <number>8</number>
           </property>
           <item>
-           <widget class="QLabel" name="label">
+           <widget class="QLabel" name="source_dir_label">
             <property name="text">
-             <string>TextLabel</string>
+             <string>Caminho de Busca (HIST)</string>
             </property>
            </widget>
           </item>
           <item>
-           <widget class="QLineEdit" name="lineEdit"/>
+           <widget class="QLineEdit" name="source_dir_line_edit"/>
           </item>
          </layout>
         </item>
         <item>
-         <layout class="QVBoxLayout" name="verticalLayout_6">
+         <layout class="QVBoxLayout" name="input_destination_dir_layout">
           <property name="spacing">
            <number>0</number>
           </property>
@@ -195,21 +211,21 @@
            <number>8</number>
           </property>
           <item>
-           <widget class="QLabel" name="label_2">
+           <widget class="QLabel" name="destination_dir_label">
             <property name="text">
-             <string>TextLabel</string>
+             <string>Caminho destino</string>
             </property>
            </widget>
           </item>
           <item>
-           <widget class="QLineEdit" name="lineEdit_2"/>
+           <widget class="QLineEdit" name="destination_dir_line_edit"/>
           </item>
          </layout>
         </item>
        </layout>
       </item>
       <item>
-       <layout class="QHBoxLayout" name="horizontalLayout">
+       <layout class="QHBoxLayout" name="main_import_btns_layouts">
         <property name="spacing">
          <number>24</number>
         </property>
@@ -226,16 +242,16 @@
          <number>24</number>
         </property>
         <item>
-         <widget class="QPushButton" name="pushButton">
+         <widget class="QPushButton" name="check_import_btn">
           <property name="text">
-           <string>PushButton</string>
+           <string>Check</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QPushButton" name="pushButton_2">
+         <widget class="QPushButton" name="import_btn">
           <property name="text">
-           <string>PushButton</string>
+           <string>Import</string>
           </property>
          </widget>
         </item>
@@ -250,7 +266,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>778</width>
+     <width>704</width>
      <height>21</height>
     </rect>
    </property>

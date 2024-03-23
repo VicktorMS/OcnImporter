@@ -7,3 +7,8 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         super().__init__()
         self.setupUi(self)
         self.setWindowTitle("OCN Importer")
+        self.import_btn.clicked.connect(self.do_something)
+
+    def do_something(self):
+        print("Hello", self.source_dir_line_edit.text())
+
