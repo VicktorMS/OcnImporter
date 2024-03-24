@@ -1,9 +1,9 @@
 import os
 import shutil
-from src.validators.file_validation import is_file_format_valid
+from src.core.validators.file_validation import is_file_format_valid
 from src.core.import_data_comparison import compare_import_data_list_with_files_list
 from datetime import datetime
-from src.constants.dictionaries_constants import (
+from src.core.constants.dictionaries_constants import (
     FILE_CODE,
     FILE_FORMAT,
     FILE_NAME,

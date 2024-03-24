@@ -1,5 +1,5 @@
 from datetime import timedelta
-from src.constants.sensor_types_constants import sensors_formats
+from src.core.constants.sensor_types_constants import sensors_formats
 
 
 def sensor_name_to_format(sensor_name):

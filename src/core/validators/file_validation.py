@@ -1,4 +1,4 @@
-from src.constants.sensor_types_constants import sensors_formats
+from src.core.constants.sensor_types_constants import sensors_formats
 from pathlib import Path
 
 

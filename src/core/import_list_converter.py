@@ -1,6 +1,6 @@
 from src.utils.utils import sensor_name_to_format
 from datetime import datetime
-from src.constants.dictionaries_constants import (
+from src.core.constants.dictionaries_constants import (
     SENSOR_PARAM_UCD,
     SENSOR_NAME,
     SENSOR_FORMAT,

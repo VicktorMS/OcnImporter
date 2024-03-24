@@ -1,5 +1,5 @@
 from src.utils.utils import calculate_date_range
-from src.constants.dictionaries_constants import (
+from src.core.constants.dictionaries_constants import (
     START_DATE,
     END_DATE,
     FILE_DATE

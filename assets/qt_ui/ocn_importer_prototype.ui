@@ -101,7 +101,14 @@
            </layout>
           </item>
           <item>
-           <widget class="QTextEdit" name="output_import_result_text_edit"/>
+           <widget class="QTextEdit" name="output_import_result_text_edit">
+            <property name="readOnly">
+             <bool>true</bool>
+            </property>
+            <property name="textInteractionFlags">
+             <set>Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse</set>
+            </property>
+           </widget>
           </item>
          </layout>
         </widget>
