@@ -1,5 +1,8 @@
+from functools import partial
+
 from PySide6.QtWidgets import QMainWindow
 from ui.widgets.ui_main_window import Ui_MainWindow
+from src.ui.controllers.input_handler import InputHandler
 
 
 class MainWindow(QMainWindow, Ui_MainWindow):
@@ -7,8 +10,5 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         super().__init__()
         self.setupUi(self)
         self.setWindowTitle("OCN Importer")
-        self.import_btn.clicked.connect(self.do_something)
-
-    def do_something(self):
-        print("Hello", self.source_dir_line_edit.text())
+        InputHandler(self)
 
