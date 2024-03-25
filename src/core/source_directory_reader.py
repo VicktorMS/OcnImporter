@@ -1,7 +1,6 @@
 import os
 import shutil
 from src.core.validators.file_validation import is_file_format_valid
-from src.core.import_data_comparison import compare_import_data_list_with_files_list
 from datetime import datetime
 from src.core.constants.dictionaries_constants import (
     FILE_CODE,
@@ -11,7 +10,7 @@ from src.core.constants.dictionaries_constants import (
 )
 
 
-def search_files_for_import_data(import_data_list, search_directory):
+def convert_valid_files_to_dictionary(search_directory):
     if os.path.exists(search_directory):
         data_list = []
         files_in_directory = os.listdir(search_directory)
@@ -20,7 +19,7 @@ def search_files_for_import_data(import_data_list, search_directory):
             if is_file_format_valid(file):
                 data_list.append(parse_file_name(file))
 
-        compare_import_data_list_with_files_list(import_data_list, data_list)
+        return data_list
 
 
 def parse_file_name(file_name):
@@ -43,6 +42,3 @@ def parse_file_name(file_name):
     else:
         return None
 
-
-def copy_data_to_destination_directory(data_path, destination_directory):
-    shutil.copy(data_path, destination_directory)

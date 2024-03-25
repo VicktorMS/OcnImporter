@@ -1,6 +1,6 @@
 import unittest
 from datetime import datetime, timedelta
-from src.core.import_data_comparison import calculate_date_range, compare_import_data_list_with_files_list
+from src.core.main_importer import calculate_date_range, compare_import_data_list_with_files_list
 from tests.constants.data_entry_constants import SOURCE_DIRECTORY_FILE_LIST_EXAMPLE, IMPORT_LIST_DICTIONARY_LIST_EXAMPLE
 from src.core.constants.dictionaries_constants import FILE_DATE, START_DATE
 
