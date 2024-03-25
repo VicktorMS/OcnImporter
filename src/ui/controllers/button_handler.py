@@ -1,4 +1,7 @@
 from src.core.import_list_converter import convert_string_array_to_import_data_list
+from src.core.main_importer import import_files_to_directory
+from src.core.source_directory_reader import convert_valid_files_to_dictionary
+
 
 
 class ButtonHandler:
@@ -21,9 +24,10 @@ class ButtonHandler:
         self.main_window.import_btn.clicked.connect(lambda: self.process_data_string())
 
     def process_data_string(self):
-        string_array = self.main_controller.import_list
-        import_list = convert_string_array_to_import_data_list(string_array)
-        print("Hello ", import_list)
+        destination_path = self.main_controller.destination_dir_path
+        source_path = self.main_controller.source_dir_path
+        import_list = self.main_controller.import_list
+        import_files_to_directory(source_path, destination_path, import_list)
 
     def setup_copy_button_callback(self):
         self.main_window.copy_import_results_btn.clicked.connect(lambda: print("Copy Btn"))
