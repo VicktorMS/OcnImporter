@@ -4,19 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a6f696d2-300f-446a-8bc5-8d841cdaf59a" name="Changes" comment="UI Prototyping with PySide6">
-      <change afterPath="$PROJECT_DIR$/src/ui/controllers/input_handler.py" afterDir="false" />
+    <list default="true" id="a6f696d2-300f-446a-8bc5-8d841cdaf59a" name="Changes" comment="Added: Input Validation for blank inputs">
+      <change afterPath="$PROJECT_DIR$/src/ui/controllers/button_handler.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui/controllers/input_validator.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui/controllers/main_controller.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/ui/ocn_importer_prototype.ui" beforeDir="false" afterPath="$PROJECT_DIR$/assets/qt_ui/ocn_importer_prototype.ui" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/constants/dictionaries_constants.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/constants/dictionaries_constants.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/constants/sensor_types_constants.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/constants/sensor_types_constants.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/import_data_comparison.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/import_data_comparison.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/import_data_processor.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/import_data_processor.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/import_list_converter.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/import_list_converter.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/utils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/validators/file_validation.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/validators/file_validation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/constants/data_entry_constants.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/constants/data_entry_constants.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_comparador_dado_e_perda.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_comparador_dado_e_perda.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/controllers/input_handler.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/controllers/input_handler.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ui/widgets/main_window.py" beforeDir="false" afterPath="$PROJECT_DIR$/ui/widgets/main_window.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -227,7 +220,23 @@
       <option name="project" value="LOCAL" />
       <updated>1711134658918</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Refactored: supporting modules moved from src/ to src/core">
+      <option name="closed" value="true" />
+      <created>1711284400833</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1711284400833</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Added: Input Validation for blank inputs">
+      <option name="closed" value="true" />
+      <created>1711284446603</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1711284446603</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -249,6 +258,18 @@
     <MESSAGE value="Refactored: All files to English pattern and created constants.py" />
     <MESSAGE value="Refactored: Unit Tests" />
     <MESSAGE value="UI Prototyping with PySide6" />
-    <option name="LAST_COMMIT_MESSAGE" value="UI Prototyping with PySide6" />
+    <MESSAGE value="Refactored: supporting modules moved from src/ to src/core" />
+    <MESSAGE value="Added: Input Validation for blank inputs" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added: Input Validation for blank inputs" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/src/ui/controllers/input_validator.py</url>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
