@@ -12,6 +12,7 @@ from src.core.constants.dictionaries_constants import (
 # Processa informacoes sobre perdas de um array do pyPerdas
 def convert_string_array_to_import_data_list(string_array):
     import_data_list = []
+    string_array = eval(string_array)
     for string in string_array:
         import_data = extract_import_data_from_string(string)
         import_data_list.append(import_data)
