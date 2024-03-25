@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a6f696d2-300f-446a-8bc5-8d841cdaf59a" name="Changes" comment="On click import button converts import string array to with convert_string_array_to_import_data_list()">
+    <list default="true" id="a6f696d2-300f-446a-8bc5-8d841cdaf59a" name="Changes" comment="Improvement: More efficient Data Comparison and handling errors.&#10;&#10;TODO: code in data_comparator.py more monolithic, needs to be refactored.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/import_data_comparison.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/main_importer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/import_data_processor.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/source_directory_reader.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/source_directory_reader.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/files_manipulator.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ui/controllers/button_handler.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/controllers/button_handler.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_comparador_dado_e_perda.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_comparador_dado_e_perda.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -260,7 +258,31 @@
       <option name="project" value="LOCAL" />
       <updated>1711380056024</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Refatored: main_importer.py created as some sort of an endpoint.">
+      <option name="closed" value="true" />
+      <created>1711393830369</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1711393830369</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Feature: On click Import_btn Import operation is executed.">
+      <option name="closed" value="true" />
+      <created>1711393871964</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1711393871964</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Improvement: More efficient Data Comparison and handling errors.&#10;&#10;TODO: code in data_comparator.py more monolithic, needs to be refactored.">
+      <option name="closed" value="true" />
+      <created>1711397407704</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1711397407704</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -287,14 +309,17 @@
     <MESSAGE value="Inputs connections with Main Controller" />
     <MESSAGE value="Business logic of data string converter fixed. &#10;Now converts a string to an array before starts the logic." />
     <MESSAGE value="On click import button converts import string array to with convert_string_array_to_import_data_list()" />
-    <option name="LAST_COMMIT_MESSAGE" value="On click import button converts import string array to with convert_string_array_to_import_data_list()" />
+    <MESSAGE value="Refatored: main_importer.py created as some sort of an endpoint." />
+    <MESSAGE value="Feature: On click Import_btn Import operation is executed." />
+    <MESSAGE value="Improvement: More efficient Data Comparison and handling errors.&#10;&#10;TODO: code in data_comparator.py more monolithic, needs to be refactored." />
+    <option name="LAST_COMMIT_MESSAGE" value="Improvement: More efficient Data Comparison and handling errors.&#10;&#10;TODO: code in data_comparator.py more monolithic, needs to be refactored." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/src/ui/controllers/button_handler.py</url>
-          <line>28</line>
+          <line>26</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>

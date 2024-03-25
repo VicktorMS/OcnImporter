@@ -1,7 +1,5 @@
 from src.core.import_list_converter import convert_string_array_to_import_data_list
 from src.core.main_importer import import_files_to_directory
-from src.core.source_directory_reader import convert_valid_files_to_dictionary
-
 
 
 class ButtonHandler:
