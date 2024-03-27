@@ -2,7 +2,8 @@ from PySide6.QtCore import QObject, Signal
 
 
 class MainController(QObject):
-    valid_inputs_signal = Signal(bool)
+    is_inputs_valid = Signal(bool)
+
     def __init__(self):
         super().__init__()
         self.source_dir_path = ""

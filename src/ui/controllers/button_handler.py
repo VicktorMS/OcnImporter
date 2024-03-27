@@ -6,7 +6,7 @@ class ButtonHandler:
     def __init__(self, MainWindow, MainController):
         self.main_window = MainWindow
         self.main_controller = MainController
-
+        self.main_controller.is_inputs_valid.connect(self.handle_invalid_inputs)
         self.setup_button_callbacks()
         self.hide_development_buttons()
 
@@ -29,6 +29,12 @@ class ButtonHandler:
 
     def setup_copy_button_callback(self):
         self.main_window.copy_import_results_btn.clicked.connect(lambda: print("Copy Btn"))
+
+    def handle_invalid_inputs(self, is_input_valid):
+        if is_input_valid:
+            self.main_window.import_btn.setEnabled(True)
+        else:
+            self.main_window.import_btn.setEnabled(False)
 
     def hide_development_buttons(self):
         self.main_window.check_import_btn.hide()

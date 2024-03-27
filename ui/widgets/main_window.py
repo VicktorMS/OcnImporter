@@ -13,8 +13,5 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         self.setWindowTitle("OCN Importer")
         self.main_controller = MainController()
 
-        InputHandler(self, self.main_controller)
         ButtonHandler(self, self.main_controller)
-
-    def handle_on_click_import(self):
-        print("Hello")
+        InputHandler(self, self.main_controller)

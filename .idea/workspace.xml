@@ -4,11 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a6f696d2-300f-446a-8bc5-8d841cdaf59a" name="Changes" comment="Improvement: More efficient Data Comparison and handling errors.&#10;&#10;TODO: code in data_comparator.py more monolithic, needs to be refactored.">
+    <list default="true" id="a6f696d2-300f-446a-8bc5-8d841cdaf59a" name="Changes" comment="Refactored: Deleted unnecessary imports">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/source_directory_reader.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/files_manipulator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/data_comparator.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/data_comparator.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ui/controllers/button_handler.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/controllers/button_handler.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/controllers/input_validator.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/controllers/input_validator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/controllers/main_controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/controllers/main_controller.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/widgets/main_window.py" beforeDir="false" afterPath="$PROJECT_DIR$/ui/widgets/main_window.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -282,7 +284,15 @@
       <option name="project" value="LOCAL" />
       <updated>1711397407704</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Refactored: Deleted unnecessary imports">
+      <option name="closed" value="true" />
+      <created>1711397464362</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1711397464362</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -312,7 +322,8 @@
     <MESSAGE value="Refatored: main_importer.py created as some sort of an endpoint." />
     <MESSAGE value="Feature: On click Import_btn Import operation is executed." />
     <MESSAGE value="Improvement: More efficient Data Comparison and handling errors.&#10;&#10;TODO: code in data_comparator.py more monolithic, needs to be refactored." />
-    <option name="LAST_COMMIT_MESSAGE" value="Improvement: More efficient Data Comparison and handling errors.&#10;&#10;TODO: code in data_comparator.py more monolithic, needs to be refactored." />
+    <MESSAGE value="Refactored: Deleted unnecessary imports" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactored: Deleted unnecessary imports" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -321,6 +332,26 @@
           <url>file://$PROJECT_DIR$/src/ui/controllers/button_handler.py</url>
           <line>26</line>
           <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/src/ui/controllers/main_controller.py</url>
+          <line>4</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/src/ui/controllers/button_handler.py</url>
+          <line>8</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/src/ui/controllers/button_handler.py</url>
+          <line>32</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/src/ui/controllers/button_handler.py</url>
+          <line>33</line>
+          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
