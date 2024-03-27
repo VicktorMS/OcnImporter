@@ -6,6 +6,14 @@ from src.ui.controllers.input_handler import InputHandler
 from src.ui.controllers.button_handler import ButtonHandler
 from src.ui.controllers.main_controller import MainController
 
+"""
+This is the main class responsible for handling the UI.
+
+This class inherits objects from `UI_MainWindow`, which is an auto-generated class resulting from compiling a .ui file. 
+This inheritance allows access to every GUI element defined in the .ui file, facilitating interaction and control over the UI.
+"""
+
+
 class MainWindow(QMainWindow, Ui_MainWindow):
     def __init__(self):
         super().__init__()

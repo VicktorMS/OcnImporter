@@ -1,6 +1,14 @@
 from PySide6.QtCore import Signal, QObject
 from src.ui.controllers.main_controller import MainController
 
+"""
+This class represents the input validation logic for the application.
+
+The InputValidator class is responsible for validating input fields in the UI. 
+It connects to various UI elements such as line edits and text edits to monitor changes and validate input data. 
+When all input fields are valid, it emits a signal indicating valid inputs to the MainController.
+"""
+
 
 class InputValidator(QObject):
     def __init__(self, MainWindow, MainController):

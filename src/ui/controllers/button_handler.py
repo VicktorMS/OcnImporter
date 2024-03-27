@@ -1,6 +1,14 @@
 from src.core.import_list_converter import convert_string_array_to_import_data_list
 from src.core.main_importer import import_files_to_directory
 
+"""
+This class handles button actions and controls button behaviors in the application.
+
+The ButtonHandler class is responsible for setting up button click callbacks and defining the behavior 
+for various buttons in the UI. It interacts with the MainController to process data and manage button states 
+based on the application's current state and input validity.
+"""
+
 
 class ButtonHandler:
     def __init__(self, MainWindow, MainController):

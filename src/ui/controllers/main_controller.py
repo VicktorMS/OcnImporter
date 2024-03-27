@@ -1,5 +1,13 @@
 from PySide6.QtCore import QObject, Signal
 
+"""
+This class represents the main controller for the application.
+
+The MainController class serves as the central controller for the application's logic. 
+It manages the application state and data, including the source directory path, destination directory path, and import list. 
+It also emits signals to indicate changes in the application state, such as the validity of input data.
+"""
+
 
 class MainController(QObject):
     is_inputs_valid = Signal(bool)
