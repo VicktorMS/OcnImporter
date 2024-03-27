@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a6f696d2-300f-446a-8bc5-8d841cdaf59a" name="Changes" comment="Feature: Import Button disabled while inputs are empty">
+    <list default="true" id="a6f696d2-300f-446a-8bc5-8d841cdaf59a" name="Changes" comment="Doc: Brief explanation comments com GUI classes.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ui/controllers/button_handler.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/controllers/button_handler.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/controllers/input_validator.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/controllers/input_validator.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/controllers/main_controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/controllers/main_controller.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ui/widgets/main_window.py" beforeDir="false" afterPath="$PROJECT_DIR$/ui/widgets/main_window.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -299,7 +297,15 @@
       <option name="project" value="LOCAL" />
       <updated>1711568996984</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Doc: Brief explanation comments com GUI classes.">
+      <option name="closed" value="true" />
+      <created>1711576023563</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1711576023563</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -331,7 +337,8 @@
     <MESSAGE value="Improvement: More efficient Data Comparison and handling errors.&#10;&#10;TODO: code in data_comparator.py more monolithic, needs to be refactored." />
     <MESSAGE value="Refactored: Deleted unnecessary imports" />
     <MESSAGE value="Feature: Import Button disabled while inputs are empty" />
-    <option name="LAST_COMMIT_MESSAGE" value="Feature: Import Button disabled while inputs are empty" />
+    <MESSAGE value="Doc: Brief explanation comments com GUI classes." />
+    <option name="LAST_COMMIT_MESSAGE" value="Doc: Brief explanation comments com GUI classes." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

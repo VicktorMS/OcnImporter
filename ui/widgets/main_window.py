@@ -20,6 +20,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         self.setupUi(self)
         self.setWindowTitle("OCN Importer")
         self.main_controller = MainController()
+        self.setFixedSize(720, 640)
 
         ButtonHandler(self, self.main_controller)
         InputHandler(self, self.main_controller)
