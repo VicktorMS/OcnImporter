@@ -24,7 +24,7 @@ class ButtonHandler:
         self.setup_copy_button_callback()
 
     def setup_paste_button_callback(self):
-        self.main_window.paste_import_list_btn.clicked.connect(lambda: print("Paste Btn"))
+        self.main_window.paste_import_list_btn.clicked.connect(self.main_window.input_import_list_text_edit.paste)
 
     def setup_import_button_callback(self):
         self.main_window.import_btn.clicked.connect(lambda: self.process_data_string())
