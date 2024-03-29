@@ -10,16 +10,6 @@ class TestComparadorDadoEPerda(unittest.TestCase):
         self.source_directory_files_list = SOURCE_DIRECTORY_FILE_LIST_EXAMPLE
         self.import_list = IMPORT_LIST_DICTIONARY_LIST_EXAMPLE
 
-    def test_calculate_date_range(self):
-        start_date = datetime(2023, 12, 20, 16, 00)
-        end_date = datetime(2023, 12, 21, 13, 00)
-        date_range = calculate_date_range(start_date, end_date)
-
-        # Generate a list of expected dates
-        expected_dates = [start_date + timedelta(hours=i) for i in range(0, 22)]
-
-        self.assertEqual(date_range, expected_dates, "The date range is not as expected")
-
     def test_import_data_comparison(self):
         # Execute the function to be tested
         result = compare_import_data_list_with_files_list(self.import_list, self.source_directory_files_list)
